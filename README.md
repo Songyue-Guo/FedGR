@@ -21,7 +21,7 @@ federated learning for double unbalance settings (sample quantities imbalance fo
 ```python
 python main_fed.py -algo fedgr -dataset cifar10
 ```
-##Citation
+## Citation
 This is the code for the 2023 DASFAA paper: FedGR: Federated Learning with Gravitation Regulation for Double Imbalance Distribution. Please cite our paper if you use the code or datasets:
 ```
 @inproceedings{Guo2023FedGR
