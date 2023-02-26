@@ -1,9 +1,9 @@
-# FedGR :Federated Learning with Gravitation Regulation for Double Imbalance Distribution
-federated learning for double unbalance settings (sample quantities imbalance for different classes in client and label or class imbalance for different client cross-client)
+# DASFA2023 - FedGR :Federated Learning with Gravitation Regulation for Double Imbalance Distribution  
+Federated learning for double unbalance settings (sample quantities imbalance for different classes in client and label or class imbalance for different client cross-client)
 ## Framework of FedGR
 ![Framework of FedGR](https://github.com/Guosy-wxy/FedGR/blob/main/images/framework.png)
 ## Part of Experiment Results (full results are listed in our paper)
- | Algorithms      |        CIFAR-10 (2)        |       CIFAR-10 (3)        |       CIFAR-100 (20)       |      {CIFAR-100 (30)       |
+ | Algorithms      |        CIFAR-10 (2)        |       CIFAR-10 (3)        |       CIFAR-100 (20)       |      CIFAR-100 (30)       |
 | --------------- | :------------------------: | :-----------------------: | :------------------------: | :------------------------: |
 |                 |           Acc(%)           |          Acc(%)           |           Acc(%)           |           Acc(%)           |
 | FedAvg          |           50.36            |           53.76           |           36.15            |           42.19            |
@@ -16,13 +16,14 @@ federated learning for double unbalance settings (sample quantities imbalance fo
 | MOON            |           61.45            |           70.45           |           40.53            |           47.91            |
 | FedRS           |        <u>63.22</u>        |       <u>73.56</u>        |        <u>42.76</u>        |           50.73            |
 | FedGC           |           62.91            |           72.11           |           42.11            |           50.21            |
-| **FedGR(ours)** | **67.84 ** | **77.86 ** | **45.44 ** | **53.16 ** |
-## quick start 
+| **FedGR(ours)** | **67.84** | **77.86** | **45.44** | **53.16** |
+## Quick Start 
 ```python
-python main_fed.py -algo fedgr -dataset cifar10
+python main_fed.py -algo fedgr/fednova/fedavg/fedopt/moon -dataset cifar10/cifar100/fashion-mnist
 ```
 ## Citation
-This is the code for the 2023 DASFAA paper: FedGR: Federated Learning with Gravitation Regulation for Double Imbalance Distribution. Please cite our paper if you use the code or datasets:
+This is the code for the 2023 DASFAA paper: FedGR: Federated Learning with Gravitation Regulation for Double Imbalance Distribution.
+**Please cite our paper if you use the code:**
 ```
 @inproceedings{Guo2023FedGR
   author    = {Songyue Guo and
